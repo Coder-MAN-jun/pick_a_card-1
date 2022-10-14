@@ -7,18 +7,15 @@ suits = ['Diamonds', 'Hearts', 'Clubs', 'Spades'] # Буби, Черви, Кре
 cards = []
 
 values.each do |value|
-	sutis.each do |suit|
-		cards << "[#{value}|#{suit}]" # [7|clubs]
+	suits.each do |suit|
+		cards << "#{value} of #{suit[0].downcase}" # 7c
 	end
-end
-
-2.times do 
-	cards << '[Joker]'
 end
 
 cards.shuffle!
 
-puts "How many cards do you pick?"
+puts "How many cards do you poick?"
+>>>>>>> alternative_output
 number = STDIN.gets.to_i
 
 number.times do 
